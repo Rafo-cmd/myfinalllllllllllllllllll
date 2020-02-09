@@ -1,0 +1,100 @@
+<html>
+
+<head>
+    <meta charset="utf8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        canvas {
+            display: block;
+            margin: 0 auto;
+        }
+
+        div {
+            display: inline-block;
+        }
+        #divv{
+            display: block;
+            background-color: rgb(255, 55, 5);
+            width: 130px;
+            margin-left:45%;
+            padding:10px;
+        }
+        h1 {
+            padding: 20px;
+            text-align: center;
+        }
+
+        body {
+            font-family: 'Noto Sans', sans-serif !important;
+        }
+        p{
+            font-size: 25px;
+        }
+    </style>
+    </style>
+</head>
+
+<body>
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <h1>Ծրագրավորում III Երևան</h1>
+            </tr>
+            <tr>
+                <h1>Ռաֆիկ Ավետիսյան</h1>
+            </tr>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Գույն</th>
+                <th scope="col">Նկարագրություն</th>
+                <th scope="col">Ծնվել է</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td scope="row" style="background-color:rgb(240, 186, 62); border:1px black solid"></td>
+                <td>Գազարագույնը Գազարն է, որը բազմանում է 2 ցիկլը մեկ, մահանում է երբ նրան ուտում է նապաստակը կամ  կոխկրտում դինոզավրը</td>
+                <td id="carrotscounter"></td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td scope="row" style="background-color:white; border:1px black solid"></td>
+                <td>Սպիտակը նապաստակն է, որը բազմանում է 10 հատ խոտ ուտելուց հետո և մահանում է ամենաշատը 10 հատ խոտ չուտելուց հետո, կամ
+                    երբ նրան ուտում է գիշատիչը կամ դինոզավրը:</td>
+                <td id="rabbitscounter"></td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td scope="row" style="background-color:red; border:1px black solid"></td>
+                <td></td>
+                <td id="predatorscounter"></td>
+            </tr>
+            <tr>
+                <th scope="row">4</th>
+                <td scope="row" style="background-color:blue; border:1px black solid"></td>
+                <td></td>
+                <td id="farmerscounter"></td>
+            </tr>
+            <tr>
+                <th scope="row">5</th>
+                <td scope="row" style="background-color:green; border:1px black solid"></td>
+                <td></td>
+                <td id="hunterscounter"></td>
+            </tr>
+            <tr>
+                <th scope="row">6</th>
+                <td scope="row" style="background-color:black; border:1px black solid"></td>
+                <td></td>
+                <td id="omnivorousescounter"></td>
+            </tr>
+        </tbody>
+    </table>
+    <div id="divv"><p id="weather">weather</p></div>
+    <script src="p5.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
